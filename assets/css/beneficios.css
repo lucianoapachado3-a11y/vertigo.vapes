@@ -1,0 +1,23 @@
+.beneficios {
+  background: transparent;
+}
+
+.beneficios__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap);
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .beneficios__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .beneficios__grid {
+    grid-template-columns: 1fr;
+  }
+}

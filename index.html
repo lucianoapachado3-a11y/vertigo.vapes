@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vertigo Vapes — Distribuidores de ELF BAR en Argentina. Más de 20 sabores disponibles. Envíos a todo el país, productos 100% originales.">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+  <meta property="og:title"       content="Vertigo Vapes | ELF BAR Argentina">
+  <meta property="og:description" content="Los mejores vapers desechables en Argentina. ELF BAR y más.">
+  <meta property="og:type"        content="website">
+  <meta property="og:image"       content="assets/images/logo/logo.png">
+
+  <title>Vertigo Vapes | ELF BAR Argentina</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Orbitron:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/productos.css">
+  <link rel="stylesheet" href="assets/css/marcas.css">
+  <link rel="stylesheet" href="assets/css/beneficios.css">
+  <link rel="stylesheet" href="assets/css/galeria.css">
+  <link rel="stylesheet" href="assets/css/contacto.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Estelas de humo globales -->
+  <div class="smoke-bg" aria-hidden="true">
+    <img src="assets/images/fondos.png" alt="" class="smoke-bg__layer smoke-bg__layer--1">
+    <img src="assets/images/fondos.png" alt="" class="smoke-bg__layer smoke-bg__layer--2">
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="navbar__inner container" aria-label="Navegación principal">
+
+      <a href="#hero" class="navbar__logo" aria-label="Vertigo Vapes — inicio">
+        <img src="assets/images/logo/logo.png"
+             alt="Vertigo Vapes"
+             class="navbar__logo-img"
+             width="140" height="88">
+      </a>
+
+      <button class="navbar__hamburger"
+              id="menuToggle"
+              aria-controls="navMenu"
+              aria-expanded="false"
+              aria-label="Abrir menú de navegación">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu" role="list">
+        <li><a class="navbar__link" href="#productos">Productos</a></li>
+        <li><a class="navbar__link" href="#marcas">Marcas</a></li>
+        <li><a class="navbar__link" href="#beneficios">Nosotros</a></li>
+        <li><a class="navbar__link" href="#galeria">Galería</a></li>
+        <li><a class="navbar__link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a href="https://wa.me/5491161436720?text=Hola%20Vertigo%20Vapes%2C%20quiero%20hacer%20un%20pedido"
+         class="btn btn--primary navbar__cta"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Comprar por WhatsApp">
+        <!-- WhatsApp icon -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Comprar
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero section" id="hero" aria-labelledby="hero-title">
+
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-placeholder"></div>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__smoke" aria-hidden="true">
+        <span class="hero__smoke-wisp hero__smoke-wisp--1"></span>
+        <span class="hero__smoke-wisp hero__smoke-wisp--2"></span>
+        <span class="hero__smoke-wisp hero__smoke-wisp--3"></span>
+        <span class="hero__smoke-wisp hero__smoke-wisp--4"></span>
+        <span class="hero__smoke-wisp hero__smoke-wisp--5"></span>
+      </div>
+
+      <div class="hero__particles" aria-hidden="true">
+        <span class="particle particle--1"></span>
+        <span class="particle particle--2"></span>
+        <span class="particle particle--3"></span>
+      </div>
+
+      <div class="container hero__content">
+        <h1 class="hero__title" id="hero-title">Vertigo Vapes</h1>
+
+        <div class="hero__logo-wrap">
+          <img src="assets/images/logo/logo.png"
+               alt="Vertigo Vapes"
+               class="hero__logo-img"
+               width="520" height="320">
+        </div>
+
+        <p class="hero__tagline">El sabor que te eleva</p>
+
+        <p class="hero__description">
+          Distribuidores de ELF BAR en Argentina · Envíos a todo el país.
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/5491161436720?text=Hola%2C%20quiero%20ver%20el%20cat%C3%A1logo%20de%20Vertigo%20Vapes"
+             class="btn btn--primary btn--lg"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Ver catálogo por WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Ver Catálogo
+          </a>
+
+          <a href="https://instagram.com/vertigo_vapes"
+             class="btn btn--outline btn--lg"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Seguir en Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            Instagram
+          </a>
+        </div>
+
+        <div class="hero__stats" aria-label="Estadísticas de Vertigo Vapes">
+          <div class="hero__stat">
+            <div class="hero__stat-value">+20</div>
+            <div class="hero__stat-label">Sabores</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">100%</div>
+            <div class="hero__stat-label">Originales</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">7 días</div>
+            <div class="hero__stat-label">Disponibles</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#productos" class="hero__scroll-cta" aria-label="Ver productos">
+        Ver productos
+        <span class="scroll-arrow" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         PRODUCTOS
+         ============================================================ -->
+    <section class="productos section" id="productos" aria-labelledby="productos-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="productos-title">
+            Nuestros <span>Productos</span>
+          </h2>
+          <p class="section-subtitle">
+            Elegí tu sabor favorito de ELF BAR. Todos los productos son originales y tienen garantía.
+          </p>
+        </header>
+
+        <ul class="productos__grid" role="list" aria-label="Catálogo de productos">
+
+          <!-- Producto 1: Bajaj Splash — azul -->
+          <li class="product-card reveal" data-category="mentol" data-flavor="azul">
+            <div class="product-card__image-wrap">
+              <img src="assets/images/productos/1.png"
+                   alt="ELF BAR ICE KING — Bajaj Splash"
+                   class="product-card__image"
+                   loading="lazy"
+                   width="600" height="600">
+              <span class="product-card__badge">Más pedido</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">ELF BAR ICE KING</h3>
+              <p class="product-card__flavor">Bajaj Splash</p>
+              <p class="product-card__puffs">40.000 puffs · 5 niveles de frío · 3 de turbo</p>
+              <p class="product-card__price">
+                <span class="price__currency">ARS</span>
+                <span class="price__amount">$30.000</span>
+              </p>
+              <a href="https://wa.me/5491161436720?text=Hola%21%20Quiero%20pedir%20un%20ELF%20BAR%20ICE%20KING%20Bajaj%20Splash.%20%C2%BFTienen%20stock%3F"
+                 class="btn btn--whatsapp product-card__cta"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Pedir ELF BAR ICE KING Bajaj Splash por WhatsApp">
+                Pedir este sabor
+              </a>
+            </div>
+          </li>
+
+          <!-- Producto 2: Cherry Strazz — rojo -->
+          <li class="product-card reveal reveal-delay-1" data-category="frutal" data-flavor="rojo">
+            <div class="product-card__image-wrap">
+              <img src="assets/images/productos/2.png"
+                   alt="ELF BAR ICE KING — Cherry Strazz"
+                   class="product-card__image"
+                   loading="lazy"
+                   width="600" height="600">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">ELF BAR ICE KING</h3>
+              <p class="product-card__flavor">Cherry Strazz</p>
+              <p class="product-card__puffs">40.000 puffs · 5 niveles de frío · 3 de turbo</p>
+              <p class="product-card__price">
+                <span class="price__currency">ARS</span>
+                <span class="price__amount">$30.000</span>
+              </p>
+              <a href="https://wa.me/5491161436720?text=Hola%21%20Quiero%20pedir%20un%20ELF%20BAR%20ICE%20KING%20Cherry%20Strazz.%20%C2%BFTienen%20stock%3F"
+                 class="btn btn--whatsapp product-card__cta"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Pedir ELF BAR ICE KING Cherry Strazz por WhatsApp">
+                Pedir este sabor
+              </a>
+            </div>
+          </li>
+
+          <!-- Producto 3: Strawberry Watermelon — rosa -->
+          <li class="product-card reveal reveal-delay-2" data-category="frutal" data-flavor="rosa">
+            <div class="product-card__image-wrap">
+              <img src="assets/images/productos/3.png"
+                   alt="ELF BAR ICE KING — Strawberry Watermelon"
+                   class="product-card__image"
+                   loading="lazy"
+                   width="600" height="600">
+              <span class="product-card__badge product-card__badge--new">Nuevo</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">ELF BAR ICE KING</h3>
+              <p class="product-card__flavor">Strawberry Watermelon</p>
+              <p class="product-card__puffs">40.000 puffs · 5 niveles de frío · 3 de turbo</p>
+              <p class="product-card__price">
+                <span class="price__currency">ARS</span>
+                <span class="price__amount">$30.000</span>
+              </p>
+              <a href="https://wa.me/5491161436720?text=Hola%21%20Quiero%20pedir%20un%20ELF%20BAR%20ICE%20KING%20Strawberry%20Watermelon.%20%C2%BFTienen%20stock%3F"
+                 class="btn btn--whatsapp product-card__cta"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Pedir ELF BAR ICE KING Strawberry Watermelon por WhatsApp">
+                Pedir este sabor
+              </a>
+            </div>
+          </li>
+
+          <!-- Producto 4: Miami Mint — menta -->
+          <li class="product-card reveal reveal-delay-3" data-category="mentol" data-flavor="menta">
+            <div class="product-card__image-wrap">
+              <img src="assets/images/productos/4.png"
+                   alt="ELF BAR ICE KING — Miami Mint"
+                   class="product-card__image"
+                   loading="lazy"
+                   width="600" height="600">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">ELF BAR ICE KING</h3>
+              <p class="product-card__flavor">Miami Mint</p>
+              <p class="product-card__puffs">40.000 puffs · 5 niveles de frío · 3 de turbo</p>
+              <p class="product-card__price">
+                <span class="price__currency">ARS</span>
+                <span class="price__amount">$30.000</span>
+              </p>
+              <a href="https://wa.me/5491161436720?text=Hola%21%20Quiero%20pedir%20un%20ELF%20BAR%20ICE%20KING%20Miami%20Mint.%20%C2%BFTienen%20stock%3F"
+                 class="btn btn--whatsapp product-card__cta"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Pedir ELF BAR ICE KING Miami Mint por WhatsApp">
+                Pedir este sabor
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARCAS
+         ============================================================ -->
+    <section class="marcas section" id="marcas" aria-labelledby="marcas-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="marcas-title">
+            Nuestras <span>Marcas</span>
+          </h2>
+          <p class="section-subtitle">
+            Trabajamos con las mejores marcas del mercado para garantizarte calidad y sabor.
+          </p>
+        </header>
+
+        <div class="marcas__grid">
+
+          <article class="brand-card brand-card--active reveal" aria-labelledby="marca-elfbar-title">
+            <div class="brand-card__logo-wrap">
+              <span class="brand-logo-text">ELF BAR</span>
+            </div>
+            <div>
+              <h3 class="brand-card__name" id="marca-elfbar-title">ELF BAR</h3>
+              <p class="brand-card__desc">
+                La marca de vapers desechables más popular del mundo. +20 sabores disponibles con hasta 40.000 puffs.
+              </p>
+              <span class="brand-card__status brand-card__status--available">
+                ✓ Disponible ahora
+              </span>
+            </div>
+          </article>
+
+          <article class="brand-card brand-card--coming-soon reveal reveal-delay-2" aria-labelledby="marca-ignite-title">
+            <div class="brand-card__logo-wrap brand-card__logo-wrap--dim">
+              <span class="brand-logo-text brand-logo-text--dim">IGNITE</span>
+            </div>
+            <div>
+              <h3 class="brand-card__name" id="marca-ignite-title">Ignite</h3>
+              <p class="brand-card__desc">
+                Próximamente en Vertigo Vapes. Seguinos en Instagram para ser el primero en enterarte cuando llegue.
+              </p>
+              <span class="brand-card__status brand-card__status--coming">
+                ⏳ Próximamente
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BENEFICIOS
+         ============================================================ -->
+    <section class="beneficios section" id="beneficios" aria-labelledby="beneficios-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="beneficios-title">
+            ¿Por qué <span>elegirnos</span>?
+          </h2>
+          <p class="section-subtitle">
+            Somos Luciano y Eduardo, dos amigos apasionados por los vapers. Atención directa y honesta, siempre.
+          </p>
+        </header>
+
+        <ul class="beneficios__grid" role="list" aria-label="Beneficios de Vertigo Vapes">
+
+          <li class="benefit-card reveal" aria-labelledby="ben-envios">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="1"/>
+                <path d="M16 8h4l3 3v5h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" id="ben-envios">Envíos a todo el país</h3>
+            <p class="benefit-card__desc">
+              Despachamos a CABA, GBA y coordinamos con todo el interior de Argentina. Rápido y seguro.
+            </p>
+          </li>
+
+          <li class="benefit-card reveal reveal-delay-1" aria-labelledby="ben-originales">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" id="ben-originales">100% Originales</h3>
+            <p class="benefit-card__desc">
+              Solo trabajamos con stock verificado. Cada producto tiene garantía de autenticidad.
+            </p>
+          </li>
+
+          <li class="benefit-card reveal reveal-delay-2" aria-labelledby="ben-variedad">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" id="ben-variedad">Gran variedad</h3>
+            <p class="benefit-card__desc">
+              Más de 20 sabores disponibles. Stock constantemente renovado con las últimas novedades.
+            </p>
+          </li>
+
+          <li class="benefit-card reveal reveal-delay-3" aria-labelledby="ben-atencion">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title" id="ben-atencion">Atención directa</h3>
+            <p class="benefit-card__desc">
+              Te atendemos Luciano y Eduardo directamente. Respondemos todos los días por WhatsApp.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALERÍA
+         ============================================================ -->
+    <section class="galeria section" id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="galeria-title">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:0.4em;">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            @vertigo_vapes
+          </h2>
+          <p class="section-subtitle">
+            Seguinos en Instagram para ver las últimas novedades, ofertas y contenido exclusivo.
+          </p>
+        </header>
+
+        <div class="galeria__carousel reveal" role="region" aria-label="Galería de Instagram de Vertigo Vapes">
+          <div class="galeria__track">
+            <div class="galeria__slide">
+              <a href="https://instagram.com/vertigo_vapes" target="_blank" rel="noopener noreferrer" aria-label="Ver foto en Instagram de Vertigo Vapes">
+                <img src="assets/images/productos/1a.png" alt="Vertigo Vapes en Instagram" class="galeria__img" loading="lazy" width="400" height="400">
+              </a>
+            </div>
+            <div class="galeria__slide">
+              <a href="https://instagram.com/vertigo_vapes" target="_blank" rel="noopener noreferrer" aria-label="Ver foto en Instagram de Vertigo Vapes">
+                <img src="assets/images/productos/2a.png" alt="Vertigo Vapes en Instagram" class="galeria__img" loading="lazy" width="400" height="400">
+              </a>
+            </div>
+            <div class="galeria__slide">
+              <a href="https://instagram.com/vertigo_vapes" target="_blank" rel="noopener noreferrer" aria-label="Ver foto en Instagram de Vertigo Vapes">
+                <img src="assets/images/productos/3a.png" alt="Vertigo Vapes en Instagram" class="galeria__img" loading="lazy" width="400" height="400">
+              </a>
+            </div>
+            <div class="galeria__slide">
+              <a href="https://instagram.com/vertigo_vapes" target="_blank" rel="noopener noreferrer" aria-label="Ver foto en Instagram de Vertigo Vapes">
+                <img src="assets/images/productos/4a.png" alt="Vertigo Vapes en Instagram" class="galeria__img" loading="lazy" width="400" height="400">
+              </a>
+            </div>
+            <div class="galeria__slide">
+              <a href="https://instagram.com/vertigo_vapes" target="_blank" rel="noopener noreferrer" aria-label="Ver foto en Instagram de Vertigo Vapes">
+                <img src="assets/images/productos/5a.png" alt="Vertigo Vapes en Instagram" class="galeria__img" loading="lazy" width="400" height="400">
+              </a>
+            </div>
+          </div>
+          <button class="galeria__nav galeria__nav--prev" aria-label="Foto anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="galeria__nav galeria__nav--next" aria-label="Foto siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <div class="galeria__dots" role="tablist" aria-label="Navegar galería">
+            <button class="galeria__dot is-active" role="tab" aria-selected="true" aria-label="Foto 1"></button>
+            <button class="galeria__dot" role="tab" aria-selected="false" aria-label="Foto 2"></button>
+            <button class="galeria__dot" role="tab" aria-selected="false" aria-label="Foto 3"></button>
+            <button class="galeria__dot" role="tab" aria-selected="false" aria-label="Foto 4"></button>
+            <button class="galeria__dot" role="tab" aria-selected="false" aria-label="Foto 5"></button>
+          </div>
+        </div>
+
+        <div class="galeria__cta-wrap">
+          <a href="https://instagram.com/vertigo_vapes"
+             class="btn btn--instagram btn--lg"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Ver más fotos en el Instagram de Vertigo Vapes">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            Ver más en Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO
+         ============================================================ -->
+    <section class="contacto section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="contacto-title">
+            Hacé tu <span>pedido</span>
+          </h2>
+          <p class="section-subtitle">
+            Respondemos todos los días. Escribinos y te contestamos al toque.
+          </p>
+        </header>
+
+        <div class="contacto__cards">
+
+          <!-- WhatsApp -->
+          <div class="contact-card contact-card--whatsapp reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <h3 class="contact-card__title">WhatsApp</h3>
+            <p class="contact-card__hours">Lunes a Domingo · 9 a 21 hs</p>
+            <div class="wa-contacts">
+              <a href="https://wa.me/5491161436720?text=Hola%20Vertigo%20Vapes%2C%20quiero%20hacer%20un%20pedido"
+                 class="wa-option"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Escribir a Luciano por WhatsApp">
+                <div class="wa-option__name">Luciano</div>
+                <div class="wa-option__number">+54 9 11 6143-6720</div>
+                <span class="btn btn--whatsapp btn--sm">Escribir</span>
+              </a>
+              <a href="https://wa.me/5491136146607?text=Hola%20Vertigo%20Vapes%2C%20quiero%20hacer%20un%20pedido"
+                 class="wa-option"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Escribir a Eduardo por WhatsApp">
+                <div class="wa-option__name">Eduardo</div>
+                <div class="wa-option__number">+54 9 11 3614-6607</div>
+                <span class="btn btn--whatsapp btn--sm">Escribir</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/vertigo_vapes"
+             class="contact-card contact-card--instagram reveal reveal-delay-1"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Contactar por Instagram">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </div>
+            <h3 class="contact-card__title">Instagram</h3>
+            <p class="contact-card__detail">@vertigo_vapes</p>
+            <p class="contact-card__hours">DMs abiertos · Respondemos siempre</p>
+            <span class="btn btn--instagram">Ir al perfil</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <img src="assets/images/logo/logo.png"
+             alt="Vertigo Vapes"
+             class="footer__logo-img"
+             width="130" height="82"
+             loading="lazy">
+        <p class="footer__tagline">El sabor que te eleva</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación del footer">
+        <ul role="list">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#marcas">Marcas</a></li>
+          <li><a href="#beneficios">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <a href="https://instagram.com/vertigo_vapes"
+           class="footer__social-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram de Vertigo Vapes">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/5491161436720"
+           class="footer__social-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="WhatsApp de Vertigo Vapes">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <div class="container">
+        <p>
+          © 2026 Vertigo Vapes · Producto exclusivo para mayores de 18 años ·
+          <strong>No apto para personas con enfermedades cardíacas ni mujeres embarazadas</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

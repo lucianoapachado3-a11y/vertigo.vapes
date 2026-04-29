@@ -1,0 +1,110 @@
+:root {
+  /* === COLORES === */
+  --color-bg-primary:    #0a0a0f;
+  --color-bg-secondary:  #0f0f1a;
+  --color-bg-card:       #12121e;
+  --color-bg-card-hover: #1a1a2e;
+
+  --color-accent:        #e61010;
+  --color-accent-dim:    #c01010;
+  --color-accent-glow:   rgba(230, 16, 16, 0.15);
+  --color-accent-border: rgba(230, 16, 16, 0.35);
+
+  --color-text-primary:  #f0f0f0;
+  --color-text-secondary:#a0a0b0;
+  --color-text-muted:    #606070;
+
+  --color-success:       #00c853;
+  --color-warning:       #ffd600;
+  --color-whatsapp:      #25d366;
+  --color-whatsapp-hover:#1da851;
+
+  /* === COLORES POR SABOR === */
+  --flavor-blue:        #00c8ff;
+  --flavor-blue-dim:    #0099cc;
+  --flavor-blue-glow:   rgba(0, 200, 255, 0.35);
+  --flavor-red:         #e61010;
+  --flavor-red-dim:     #c01010;
+  --flavor-red-glow:    rgba(230, 16, 16, 0.35);
+  --flavor-pink:        #ff3a70;
+  --flavor-pink-dim:    #cc2255;
+  --flavor-pink-glow:   rgba(255, 58, 112, 0.35);
+  --flavor-mint:        #00e5cc;
+  --flavor-mint-dim:    #00b8a3;
+  --flavor-mint-glow:   rgba(0, 229, 204, 0.35);
+
+  /* === TIPOGRAFÍA === */
+  --font-display: 'Barlow Condensed', 'Orbitron', sans-serif;
+  --font-body:    'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.25rem;
+  --fs-xl:   1.5rem;
+  --fs-2xl:  2rem;
+  --fs-3xl:  2.5rem;
+  --fs-4xl:  3.5rem;
+  --fs-hero: clamp(2.8rem, 9vw, 5.5rem);
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-bold:    700;
+  --fw-black:   900;
+
+  --lh-tight:   1.1;
+  --lh-normal:  1.5;
+  --lh-relaxed: 1.7;
+
+  /* === ESPACIADO === */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* === CONTENEDOR === */
+  --container-max: 1280px;
+  --container-pad: clamp(1rem, 4vw, 2rem);
+  --section-pad-y: clamp(4rem, 8vw, 6rem);
+
+  /* === BORDES === */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   0.75rem;
+  --radius-xl:   1rem;
+  --radius-2xl:  1.5rem;
+  --radius-full: 9999px;
+
+  /* === SOMBRAS === */
+  --shadow-card:    0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-neon:    0 0 20px rgba(230, 16, 16, 0.5), 0 0 40px rgba(230, 16, 16, 0.2);
+  --shadow-neon-sm: 0 0 12px rgba(230, 16, 16, 0.4);
+
+  /* === TRANSICIONES === */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+  --transition-bounce: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* === Z-INDEX === */
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-navbar:  200;
+
+  /* === GRIDS === */
+  --grid-cols-products: repeat(auto-fill, minmax(280px, 1fr));
+  --grid-cols-gallery:  repeat(auto-fill, minmax(180px, 1fr));
+  --grid-gap:           var(--space-6);
+}

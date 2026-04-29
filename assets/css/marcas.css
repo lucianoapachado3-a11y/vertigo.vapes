@@ -1,0 +1,47 @@
+.marcas {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.marcas::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--color-accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.marcas__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--grid-gap);
+  position: relative;
+  z-index: var(--z-raised);
+}
+
+@media (min-width: 640px) {
+  .marcas__grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 720px;
+    margin-inline: auto;
+  }
+}
+
+/* Logo text para cuando no hay imagen */
+.brand-logo-text {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-black);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.brand-logo-text--dim {
+  color: var(--color-text-muted);
+}
