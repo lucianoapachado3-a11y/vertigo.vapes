@@ -97,6 +97,86 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 })();
 
+// ─── WhatsApp confirm modal ───────────────────────────────────────────────────
+(function initWhatsappModal() {
+  const modal    = document.getElementById('whatsappModal');
+  const backdrop = document.getElementById('whatsappBackdrop');
+  const closeBtn = document.getElementById('whatsappClose');
+  const confirm  = document.getElementById('whatsappConfirm');
+  const cancel   = document.getElementById('whatsappCancel');
+  if (!modal) return;
+
+  let pendingUrl = '';
+
+  function open(url) {
+    pendingUrl = url;
+    modal.removeAttribute('hidden');
+    document.body.classList.add('menu-open');
+    closeBtn.focus();
+  }
+
+  function close() {
+    modal.setAttribute('hidden', '');
+    document.body.classList.remove('menu-open');
+    pendingUrl = '';
+  }
+
+  document.querySelectorAll('[data-whatsapp-modal]').forEach(btn => {
+    btn.addEventListener('click', () => open(btn.dataset.whatsappUrl));
+  });
+
+  backdrop.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  cancel.addEventListener('click', close);
+  confirm.addEventListener('click', () => {
+    window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+    close();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.hasAttribute('hidden')) close();
+  });
+})();
+
+// ─── WhatsApp confirm modal ───────────────────────────────────────────────────
+(function initWhatsappModal() {
+  const modal    = document.getElementById('whatsappModal');
+  const backdrop = document.getElementById('whatsappBackdrop');
+  const closeBtn = document.getElementById('whatsappClose');
+  const confirm  = document.getElementById('whatsappConfirm');
+  const cancel   = document.getElementById('whatsappCancel');
+  if (!modal) return;
+
+  let pendingUrl = '';
+
+  function open(url) {
+    pendingUrl = url;
+    modal.removeAttribute('hidden');
+    document.body.classList.add('menu-open');
+    closeBtn.focus();
+  }
+
+  function close() {
+    modal.setAttribute('hidden', '');
+    document.body.classList.remove('menu-open');
+    pendingUrl = '';
+  }
+
+  document.querySelectorAll('[data-whatsapp-modal]').forEach(btn => {
+    btn.addEventListener('click', () => open(btn.dataset.whatsappUrl));
+  });
+
+  backdrop.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  cancel.addEventListener('click', close);
+  confirm.addEventListener('click', () => {
+    window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+    close();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.hasAttribute('hidden')) close();
+  });
+})();
+
 // ─── Transfer modal ───────────────────────────────────────────────────────────
 (function initTransferModal() {
   const modal    = document.getElementById('transferModal');

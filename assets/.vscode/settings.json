@@ -1,0 +1,10 @@
+{
+  "VsCodeTaskButtons.showCounter": false,
+  "VsCodeTaskButtons.tasks": [
+    {
+      "label": "$(repo-push) Publicar",
+      "task": "Publicar cambios",
+      "tooltip": "git add + commit + push → Netlify"
+    }
+  ]
+}

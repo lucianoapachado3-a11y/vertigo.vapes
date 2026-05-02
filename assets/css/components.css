@@ -83,6 +83,38 @@
   box-shadow: 0 0 16px rgba(0, 158, 227, 0.4);
 }
 
+/* WhatsApp confirm modal */
+.whatsapp-modal__card {
+  border-color: rgba(37, 211, 102, 0.35);
+  box-shadow: 0 0 40px rgba(37, 211, 102, 0.1), var(--shadow-card);
+}
+
+.whatsapp-modal__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 214, 0, 0.12);
+  border: 1px solid rgba(255, 214, 0, 0.4);
+  color: var(--color-warning);
+  margin-bottom: var(--space-4);
+}
+
+.whatsapp-modal__text {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.whatsapp-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
 /* Transfer Modal */
 .transfer-modal {
   position: fixed;
