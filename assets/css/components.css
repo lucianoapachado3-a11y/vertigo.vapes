@@ -69,6 +69,154 @@
   box-shadow: 0 0 16px rgba(37, 211, 102, 0.4);
 }
 
+/* Mercado Pago */
+.btn--mercadopago {
+  background-color: #009ee3;
+  color: #fff;
+  border-color: #009ee3;
+}
+
+.btn--mercadopago:hover,
+.btn--mercadopago:focus-visible {
+  background-color: #0082bc;
+  border-color: #0082bc;
+  box-shadow: 0 0 16px rgba(0, 158, 227, 0.4);
+}
+
+/* Transfer Modal */
+.transfer-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.transfer-modal[hidden] {
+  display: none;
+}
+
+.transfer-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.transfer-modal__card {
+  position: relative;
+  background: var(--color-bg-card);
+  border: 1px solid rgba(0, 158, 227, 0.35);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 0 40px rgba(0, 158, 227, 0.15), var(--shadow-card);
+  animation: modal-in var(--transition-bounce) both;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.92) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.transfer-modal__close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.transfer-modal__close:hover { color: var(--color-text-primary); }
+
+.transfer-modal__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
+  padding-right: var(--space-8);
+}
+
+.transfer-modal__rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.transfer-modal__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-md);
+}
+
+.transfer-modal__label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.transfer-modal__value-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.transfer-modal__value {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+}
+
+.transfer-modal__value--price {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-black);
+  color: #009ee3;
+}
+
+.transfer-modal__copy {
+  flex-shrink: 0;
+  padding: var(--space-1) var(--space-3);
+  background: rgba(0, 158, 227, 0.15);
+  color: #009ee3;
+  border: 1px solid rgba(0, 158, 227, 0.4);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.transfer-modal__copy:hover { background: rgba(0, 158, 227, 0.3); }
+.transfer-modal__copy--done { color: var(--color-success); border-color: var(--color-success); background: rgba(0, 200, 83, 0.12); }
+
+.transfer-modal__note {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: var(--space-5);
+  line-height: var(--lh-relaxed);
+}
+
 /* Instagram */
 .btn--instagram {
   background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);

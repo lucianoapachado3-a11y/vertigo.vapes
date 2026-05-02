@@ -97,6 +97,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 })();
 
+// ─── Transfer modal ───────────────────────────────────────────────────────────
+(function initTransferModal() {
+  const modal    = document.getElementById('transferModal');
+  const backdrop = document.getElementById('transferBackdrop');
+  const closeBtn = document.getElementById('transferClose');
+  const dismiss  = document.getElementById('transferDismiss');
+  const copyBtn  = document.getElementById('copyAlias');
+  if (!modal) return;
+
+  function open() {
+    modal.removeAttribute('hidden');
+    document.body.classList.add('menu-open');
+    closeBtn.focus();
+  }
+
+  function close() {
+    modal.setAttribute('hidden', '');
+    document.body.classList.remove('menu-open');
+  }
+
+  document.querySelectorAll('[data-transfer-modal]').forEach(btn => btn.addEventListener('click', open));
+  backdrop.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  dismiss.addEventListener('click', close);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.hasAttribute('hidden')) close();
+  });
+
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText('vertigo.vapes').then(() => {
+      copyBtn.textContent = '¡Copiado!';
+      copyBtn.classList.add('transfer-modal__copy--done');
+      setTimeout(() => {
+        copyBtn.textContent = 'Copiar';
+        copyBtn.classList.remove('transfer-modal__copy--done');
+      }, 2000);
+    });
+  });
+})();
+
 // ─── Gallery carousel ─────────────────────────────────────────────────────────
 (function initGalleryCarousel() {
   const carousel = document.querySelector('.galeria__carousel');

@@ -225,6 +225,12 @@
                  aria-label="Pedir ELF BAR ICE KING Bajaj Splash por WhatsApp">
                 Pedir este sabor
               </a>
+              <button type="button"
+                      class="btn btn--mercadopago product-card__cta"
+                      data-transfer-modal
+                      aria-label="Ver datos para transferir $30.000">
+                Abonar $30.000
+              </button>
             </div>
           </li>
 
@@ -252,6 +258,12 @@
                  aria-label="Pedir ELF BAR ICE KING Cherry Strazz por WhatsApp">
                 Pedir este sabor
               </a>
+              <button type="button"
+                      class="btn btn--mercadopago product-card__cta"
+                      data-transfer-modal
+                      aria-label="Ver datos para transferir $30.000">
+                Abonar $30.000
+              </button>
             </div>
           </li>
 
@@ -280,6 +292,12 @@
                  aria-label="Pedir ELF BAR ICE KING Strawberry Watermelon por WhatsApp">
                 Pedir este sabor
               </a>
+              <button type="button"
+                      class="btn btn--mercadopago product-card__cta"
+                      data-transfer-modal
+                      aria-label="Ver datos para transferir $30.000">
+                Abonar $30.000
+              </button>
             </div>
           </li>
 
@@ -307,6 +325,12 @@
                  aria-label="Pedir ELF BAR ICE KING Miami Mint por WhatsApp">
                 Pedir este sabor
               </a>
+              <button type="button"
+                      class="btn btn--mercadopago product-card__cta"
+                      data-transfer-modal
+                      aria-label="Ver datos para transferir $30.000">
+                Abonar $30.000
+              </button>
             </div>
           </li>
 
@@ -638,6 +662,38 @@
       </div>
     </div>
   </footer>
+
+  <!-- Transfer Modal -->
+  <div class="transfer-modal" id="transferModal" role="dialog" aria-modal="true" aria-labelledby="transfer-modal-title" hidden>
+    <div class="transfer-modal__backdrop" id="transferBackdrop"></div>
+    <div class="transfer-modal__card">
+      <button class="transfer-modal__close" id="transferClose" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <h2 class="transfer-modal__title" id="transfer-modal-title">Datos para transferir</h2>
+      <div class="transfer-modal__rows">
+        <div class="transfer-modal__row">
+          <span class="transfer-modal__label">Alias</span>
+          <div class="transfer-modal__value-wrap">
+            <span class="transfer-modal__value">vertigo.vapes</span>
+            <button type="button" class="transfer-modal__copy" id="copyAlias">Copiar</button>
+          </div>
+        </div>
+        <div class="transfer-modal__row">
+          <span class="transfer-modal__label">Importe</span>
+          <span class="transfer-modal__value transfer-modal__value--price">$30.000</span>
+        </div>
+        <div class="transfer-modal__row">
+          <span class="transfer-modal__label">Destinatario</span>
+          <span class="transfer-modal__value">Eduardo Billordo</span>
+        </div>
+      </div>
+      <p class="transfer-modal__note">Copiá el alias y hacé la transferencia desde tu app bancaria o Mercado Pago.</p>
+      <button type="button" class="btn btn--primary" id="transferDismiss" style="width:100%">Listo</button>
+    </div>
+  </div>
 
   <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
